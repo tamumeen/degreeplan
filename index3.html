@@ -49,7 +49,7 @@
 	    	border: solid #5B447A 3px;
 	    	color: #5B447A;
     	}	
-    	
+
 		#formbox 
 		{
     		border: solid black 1px;
@@ -335,9 +335,6 @@
 			{
 				position: relative;
 				left: 5px;
-				background: #800000;
-				color: white;
-				border: solid 2px #800000;
 				cursor: pointer;
 				padding: 10px;
 				width: 90px;
@@ -348,34 +345,26 @@
 
 			#newCourses
 			{
-				border: grey solid 2px;
 				position: absolute;
 				left: 1200px;
 				top: 345px;
 				width: 320px;
 				height: 210px;
 				border-radius: 10px;
-				background: #FFFFFFFF
 			}
 
 			.hours
 			{
 				visibility: visible;
-			    	width: 15px;
-			    	height: 15px;
-			    	background-color: #EDDD9E;
-			    	color: black;
-			    	text-align: center;
-			    	border-radius: 50%;
-			    	/* Position the tooltip */
-			    	position: relative;
-			    	top: -20px;
-			    	left: 95px;
-			    	transition: all 0.5s;
-			}
-
-			.dropbtn:hover, .dropbtn:focus {
-			    background-color: #800000;
+		    	width: 15px;
+		    	height: 15px;
+		    	text-align: center;
+		    	border-radius: 50%;
+		    	/* Position the tooltip */
+		    	position: relative;
+		    	top: -20px;
+		    	left: 95px;
+		    	transition: all 0.5s;
 			}
 
 			.dropdown {
@@ -386,7 +375,6 @@
 			.dropdown-content {
 			    display: none;
 			    position: absolute;
-			    background-color: #8F8F8C;
 			    min-width: 140px;
 			    overflow: auto;
 			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -396,20 +384,19 @@
 			}
 
 			.dropdown-content p {
-			    color: white;
 			    padding: 12px 16px;
 			    display: block;
 			}
 
 			.dropdown-content p:hover
 			{
-				background-color: #4F552A;
 				cursor: pointer;
 			}
 
 			.show {display:block;}
 
-			.popup {
+			.popup 
+			{
 			    position: absolute;
 			    display: inline-block;
 			    cursor: pointer;
@@ -422,12 +409,11 @@
 			}
 
 			/* The actual popup */
-			.popuptext {
+			.popuptext 
+			{
 			    visibility: hidden;
 			    width: 405px;
 			    min-height: 160px;
-			    background-color: #8F8F8C;
-			    color: white;
 			    text-align: center;
 			    border-radius: 6px;
 			    padding: 8px 0;
@@ -449,19 +435,15 @@
 			{
 				height: 1px;
 				width: 1px;
-				/*background: #E7DED0;*/
-				background: black;
 			}
 
 			#key
 			{
 				height: 310px; 
 				width: 320px; 
-				background-color: white; 
 				position: absolute; 
 				left: 1200px; 
 				top: 20px;
-				border: solid 2px grey;
 				border-radius: 10px
 
 			}
@@ -481,12 +463,10 @@
 				position: absolute; 
 				left: 8px; 
 				top: 17px; 
-				border: 1px solid black;
 			}
 
 			.core:hover
 			{
-				color: black;
 				cursor: pointer;
 			}
 
@@ -509,11 +489,11 @@
 
 			#outputKathryn
 			{
-			    	width: 320px;
-			    	height: 20px;
-			    	list-style-type: none;
-			    	margin: 5px;
-			    	padding: 2px 0 0 0;	 
+		    	width: 320px;
+		    	height: 20px;
+		    	list-style-type: none;
+		    	margin: 5px;
+		    	padding: 2px 0 0 0;	 
 				position: absolute;
 				left: 1190px;
 				top: 487px;
@@ -528,11 +508,6 @@
 				position: absolute;
 				left: 8px;
 				top: 8px;
-			}
-
-			#remove:hover
-			{
-				color: white;
 			}
 
 			#print
@@ -694,7 +669,7 @@
 			  <li id="CHEM102" data-coursedata='[{"prereqs":"","coreqs":""}]' data-prereqs="" data-hours="4" data-meenRestriction="no" class="course" style="background: radial-gradient(white,#104554)">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="CHEM107-info">
+				  	<span class="popuptext" id="CHEM102-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>CHEM 102 Fundamentals of Chemistry II</h2>
@@ -709,7 +684,7 @@
 			  <li id="ENGR216" data-coursedata='[{"prereqs":"MATH151,ENGR102","coreqs":"PHYS206"}]' data-prereqs="" data-hours="2" data-meenRestriction="no" class="course" style="background: radial-gradient(white,#104554)">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MATH152-info">
+				  	<span class="popuptext" id="ENGR216-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>ENGR 216/PHYS 216 Experimental Physics and Engineering Lab II - Mechanics</h2>
@@ -740,7 +715,7 @@
 			  <li id="PHYS206" data-coursedata='[{"prereqs":"MATH151","coreqs":""}]' data-prereqs="" data-hours="3" data-meenRestriction="no" class="course" style="background: radial-gradient(white,#104554)">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MATH152-info">
+				  	<span class="popuptext" id="PHYS206-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>PHYS 206 Newtonian Mechanics for Engineering and Science</h2>
@@ -783,7 +758,7 @@
 				<li id="MEEN399" data-coursedata='[{"prereqs":"","coreqs":""}]' data-prereqs="" data-hours="0" data-meenRestriction="no" class="course" style="background-color: lightgrey">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MATH251-info">
+				  	<span class="popuptext" id="MEEN399-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>EMEEN 399 High Impact Experience for Mechanical Engineers</h2>
@@ -800,7 +775,7 @@
 			  <li id="ENGR217" data-coursedata='[{"prereqs":"MATH152,PHYS206,ENGR216","coreqs":"PHYS207"}]' data-prereqs="" data-hours="2" data-meenRestriction="no" class="course" style="background-color: lightgrey">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MATH251-info">
+				  	<span class="popuptext" id="ENGR217-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>ENGR 217/PHYS 217 Experimental Physics and Engineering Lab III - Electricity and Magnetism</h2>
@@ -837,7 +812,7 @@
 				  		<h2>MEEN 210 Geometric Modeling for Mechanical Design</h2>
 				  		<h3>Credits 2. 1 Lecture Hour. 2 Lab Hours.</h3>
 				  		Foundations of geometric modeling as applied to mechanical design through use of modern computer-aided design (CAD) and physical prototyping tools; basics of systematic design methodology; geometric visualization concepts: multiview orthographic, isometric, oblique, perspective; three-dimensional representations, surface and solid modeling; dimensioning and tolerancing; rapid prototyping using 3D printing. 
-				  		<h3>Prerequisites: Mechanical engineering major; ENGR 111.</h3>
+				  		<h3>Prerequisites: Mechanical engineering major; grade of C or better in ENGR 102 or ENGR 111.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 210 <br> Modeling for <br> Mech. Design
@@ -852,7 +827,7 @@
 				  		<h2>MEEN 222/MSEN 222 Materials Science</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Mechanical, optical, thermal, magnetic and electrical properties of solids; differences in properties of metals, polymers, ceramics and composite materials in terms of bonding and crystal structure. 
-				  		<h3>Prerequisites: CHEM 102, or CHEM 104 and CHEM 114, or CHEM 107 and CHEM 117; PHYS 218. </h3>
+				  		<h3>Grade of C or better in CHEM 102 and CHEM 112, or CHEM 104 and CHEM 114, or CHEM 107 and CHEM 117; grade of C or better in PHYS 206 or PHYS 218. </h3>
 				  	</span>
 			  	</div>
 			  	MEEN 222 <br> Materials <br> Science
@@ -868,7 +843,7 @@
 				  		<h3>Credits 3. 2 Lecture Hours. 2 Lab Hours</h3>
 						Application of the laws of classical mechanics to simplified, plausibly real world problems or interest to mechanical engineering, including the analysis of cables, frames, trusses, beams, machines and mechanisms. 
 
-				  		<h3>Prerequisites: Mechanical engineering major; MATH 251 or MATH 253 or registration therein; PHYS 218.</h3>
+				  		<h3>Prerequisites: Mechanical engineering major; grade of C or better in PHYS 206 or PHYS 218; grade of C or better in MATH 251 or MATH 253, or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 225 <br> Engineering <br> Mechanics
@@ -877,13 +852,12 @@
 			  <li id="PHYS207" data-coursedata='[{"prereqs":"PHYS206,MATH152","coreqs":""}]' data-prereqs="" data-hours="3" data-meenRestriction="no" class="course" style="background-color: lightgrey">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MEEN225-info">
+				  	<span class="popuptext" id="PHYS207-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>PHYS 207 Electricity and Magnetism for Engineering and Science</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 						Calculus-based electricity and magnetism; electromagnetic phenomena; basic laws of electricity and magnetism; science and engineering problems involving charges, electromagnetic fields, and electrical circuits. 
-
 				  		<h3>Prerequisites: Grade of C or better in PHYS 206; grade of C or better in MATH 152 or MATH 172 or equivalent.</h3>
 				  	</span>
 			  	</div>
@@ -903,7 +877,7 @@
 				  		<h2>ECEN 215 Principles of Electrical Engineering</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 2 Lab Hours.</h3>
 				  		Fundamentals of electric circuit analysis and introduction to electronics for engineering majors other than electrical and computer engineering. 
-				  		<h3>Prerequisites: MATH 251 and PHYS 208 with a grade of C or better.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MATH 251 and PHYS 207 or PHYS 208.</h3>
 				  	</span>
 			  	</div>
 			  	ECEN 215 <br> Principles of <br> Electrical Engr.
@@ -948,7 +922,7 @@
 				  		<h2>MEEN 368 Solid Mechanics in Mechanical Design</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 2 Lab Hours.</h3>
 				  		Stress analysis of deformable bodies and mechanical elements; stress transformation; combined loading; failure modes; material failure theories; fracture and fatigue; deflections and instabilities; thick cylinders; curved beams; design of structural/mechanical members; design processes. 
-				  		<h3>Prerequisites: CVEN 305; MEEN 357 and MEEN 360 or registration therein; junior or senior classification.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 222/MSEN 222 or MSEN 222/MEEN 222; grade of a C or better in MEEN 225.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 368 <br> Solid Mech. in <br> Mech. Design
@@ -963,7 +937,7 @@
 				  		<h2>MEEN 315 Principles of Thermodynamics</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Theory and application of energy methods in engineering; conservation of mass and energy; energy transfer by heat, work and mass; thermodynamic properties; analysis of open and closed systems; the second law of thermodynamics and entropy; gas, vapor and refrigeration cycles. 
-				  		<h3>Prerequisites: MEEN 225; MATH 251 or MATH 253; junior or senior classification.</h3>
+				  		<h3>Prerequisites: Grade of a C or better in MEEN 221 or MEEN 225; grade of a C or better in MATH 251 or MATH 253.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 315 <br> Principles of <br> Thermodynamcis
@@ -1008,7 +982,7 @@
 				  		<h2>MEEN 260 Mechanical Measurements</h2>
 				  		<h3>Credit 1. 3 Lab Hours.</h3>
 				  		Introduction to basic fluid mechanics instrumentation; experimental verification and reinforcement of the analytical concepts introduced in MEEN 344. 
-				  		<h3>Prerequisites: MEEN 260; MEEN 344 or registration therein.</h3>
+				  		<h3>Prerequisites: MEEN 225, ECEN 215, MATH 308 and MEEN 315 or registration therein.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 260 <br> Mechanical <br> Measurements
@@ -1023,7 +997,7 @@
 				  		<h2>MEEN 344 Fluid Mechanics</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Application of laws of statics, buoyancy, stability, energy and momentum to behavior of ideal and real fluids; dimensional analysis and similitude and their application to flow through ducts and piping; lift and drag and related problems. 
-				  		<h3>Prerequisites: MEEN 225 and MEEN 315.</h3>
+				  		<h3>Grade of C or better in MEEN 315.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 344 <br> Fluid Mechanics <br> <br>
@@ -1038,7 +1012,7 @@
 				  		<h2>MEEN 357 Engineering Analysis for Mechanical Engineers</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Practical foundation for the use of numerical methods to solve engineering problems: Introduction to Matlab, error estimation, Taylor series, solution of non-linear algebraic equations and linear simultaneous equations; numerical integration and differentiation; initial value and boundary value problems; finite difference methods for parabolic and elliptic partial differential equations. 
-				  		<h3>Prerequisites: ENGR 112 and MATH 308; MEEN 210 or concurrent enrollment.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MATH 308; grade of C or better in MEEN 210 or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 357 <br> Engr. Analysis <br> for Mech.
@@ -1053,7 +1027,7 @@
 				  		<h2>MEEN 381 Seminar</h2>
 				  		<h3>Credit 1. 2 Other Hours.</h3>
 				  		Presentations by practicing engineers and faculty addressing: effective communications, engineering practices, professional registration, ethics, career-long competence, contemporary issues, impact of technology on society and being informed; preparation of a resume, a lifelong learning plan, two papers, two oral presentations and complete an online assessment of the mechanical engineering program. 
-				  		<h3>Prerequisite: Upper-level classification in mechanical engineering.</h3>
+				  		<h3>Major in mechanical engineering.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 381 <br> Seminar <br> <br> 
@@ -1111,7 +1085,7 @@
 				  		<h2>MEEN 345 Fluid Mechanics Laboratory</h2>
 				  		<h3>Credit 1. 3 Lab Hours.</h3>
 				  		Introduction to basic fluid mechanics instrumentation; experimental verification and reinforcement of the analytical concepts introduced in MEEN 344. 
-				  		<h3>Prerequisites: MEEN 260; MEEN 344 or registration therein.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 260; grade of C or better in MEEN 344 or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 345 <br> Fluid Mechanics <br> Lab
@@ -1126,7 +1100,7 @@
 				  		<h2>MEEN 360 Materials and Manufacturing Selection in Design</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Selecting materials and manufacturing processes in design; emphasis on material mechanical properties; microstructure production and control; manufacturing processes for producing various shapes for components and structures; use of design methodology. 
-				  		<h3>Prerequisites: MEEN 210, MEEN 222/MSEN 222, MEEN 260; CVEN 305; junior or senior classification.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 210, MEEN 260, and MEEN 222/MSEN 222 or MSEN 222/MEEN 222.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 360 <br> Materials and <br> Manufacturing
@@ -1141,7 +1115,7 @@
 				  		<h2>MEEN 361 Materials and Manufacturing in Design Laboratory</h2>
 				  		<h3>Credit 1. 3 Lab Hours.</h3>
 				  		Experiments in materials characterization and manufacturing processes; emphasis on material mechanical properties; microstructure production and control; manufacturing processes for producing various shapes for components and structures. 
-				  		<h3>Prerequisites: MEEN 222/MSEN 222, MEEN 260; CVEN 305; MEEN 360 or registration therein; junior or senior classification or approval of instructor.</h3>
+				  		<h3>Grade of C or better in MEEN 260, and MEEN 222/MSEN 222 or MSEN 222/MEEN 222; grade of C or better in MEEN 360 or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 361 <br> Materials and <br> Mfg. Lab
@@ -1156,7 +1130,7 @@
 				  		<h2>MEEN 364 Dynamic Systems and Controls</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 3 Lab Hours.</h3>
 				  		Mathematical modeling, analysis, measurement and control of dynamic systems; extensions of modeling techniques of MEEN 363 to other types of dynamic systems; introduction to feedback control, time and frequency domain analysis of control systems, stability, PID control, root locus; design and implementation of computer-based controllers in the lab. 
-				  		<h3>Prerequisites: MEEN 260 and MEEN 363;</h3>
+				  		<h3>Grade of C or better in MEEN 260 and MEEN 363.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 364 <br> Dynamic Syst. <br> and Control
@@ -1165,7 +1139,7 @@
 			  <li id="MEEN441" data-coursedata='[{"prereqs":"MEEN368","coreqs":""}]' data-prereqs="" data-hours="3" data-meenRestriction="yes" class="course" style="background-color: lightgrey">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
-				  	<span class="popuptext" id="MEEN364-info">
+				  	<span class="popuptext" id="MEEN441-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
 				  		<h2>MEEN 441 Design of Mechanical Components and Systems</h2>
@@ -1186,7 +1160,7 @@
 				  		<h2>MEEN 461 Heat Transfer</h2>
 				  		<h3>Credits 3. 3 Lecture Hours.</h3>
 				  		Heat transfer by conduction, convection and radiation: steady and transient conduction, forced and natural convection, and blackbody and gray body radiation; multi-mode heat transfer; boiling and condensation; heat exchangers. 
-				  		<h3>Prerequisites: MEEN 344; MATH 308.</h3>
+				  		<h3>Grade of C or better in MEEN 344.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 461 <br> Heat Transfer <br> <br> 
@@ -1231,7 +1205,7 @@
 				  		<h2>MEEN 401 Introduction to Mechanical Engineering Design</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 3 Lab Hours.</h3>
 				  		The design innovation process; need definition, functional analysis, performance requirements and evaluation criteria, conceptual design evaluation, down-selected to an embodiment; introduction to systems and concurrent engineering; parametric and risk analysis, failure mode analysis, material selection, and manufacturability; cost and life cycle issues, project management. 
-				  		<h3>Prerequisites: MEEN 360, MEEN 361, MEEN 364, MEEN 368, MEEN 461.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 360, MEEN 361, MEEN 364, MEEN 441, and MEEN 461.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 401 <br> Intro to Mech. <br> Engr. Dsn.
@@ -1246,7 +1220,7 @@
 				  		<h2>MEEN 404 Engineering Laboratory</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 3 Lab Hours.</h3>
 				  		Systematic design of experimental investigations; student teams identify topics and develop experiment designs including: establishing the need; functional decomposition; requirements; conducting the experiment; analyzing and interpreting the results and written and oral reports documenting the objectives, procedure, analysis, and results and conclusion of two or three experiments. 
-				  		<h3>Prerequisites: MEEN 260, MEEN 360, MEEN 361, MEEN 364 and MEEN 461; MEEN 401 or registration therein; junior or senior classification.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 360, MEEN 361, MEEN 364 and MEEN 461; grade of C or better in MEEN 401 or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 404 <br> Engineering <br> Labratory
@@ -1261,7 +1235,7 @@
 				  		<h2>MEEN 464 Heat Transfer Laboratory</h2>
 				  		<h3>Credit 1. 3 Lab Hours.</h3>
 				  		Basic measurement techniques in conduction, convection, and radiation heat transfer; experimental verification of theoretical and semi-empirical results; uncertainty analysis. 
-				  		<h3>Prerequisite: MEEN 345, MEEN 461 or registration therein.</h3>
+				  		<h3>Prerequisite: Grade of C or better in MEEN 345; grade of C or better or MEEN 461 or concurrent enrollment.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 464 <br> Heat Transfer <br> Lab
@@ -1355,7 +1329,7 @@
 				  		<h2>MEEN 402 Intermediate Design</h2>
 				  		<h3>Credits 3. 2 Lecture Hours. 3 Lab Hours.</h3>
 				  		Product detail design and development process including case studies; project management, marketing considerations, manufacturing, detailed design specifications; failure modes, application of codes and standards, selection of design margins; product (component) development guidelines; intellectual property, product liability and ethical responsibility. 
-				  		<h3>Prerequisites: MEEN 401; junior or senior classification.</h3>
+				  		<h3>Prerequisites: Grade of C or better in MEEN 401.</h3>
 				  	</span>
 			  	</div>
 			  	MEEN 402 <br> Intermediate <br> Design
