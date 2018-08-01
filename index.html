@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAMU MEEN Degree Planner</title>
+	<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+<body>
+	<h1>What year did you enroll at Texas A&M?</h1>
+
+<select id="list" accesskey="target">
+   <option selected>Please select a year</option>
+		<option value="index2.html">2012</option>
+		<option value="index2.html">2013</option>
+		<option value="index2.html">2014</option>
+		<option value="index2.html">2015</option>
+		<option value="index2.html">2016</option>
+		<option value="index2.html">2017</option>
+		<option value="index3.html">2018</option>
+		<option value="index3.html">2019</option>
+		<option value="index3.html">2020</option>
+		<option value="index3.html">2021</option>
+		<option value="index3.html">2022</option>
+</select>
+<input type=button value="Submit" onclick="goToNewPage()" />
+
+
+</body>
+</html>
