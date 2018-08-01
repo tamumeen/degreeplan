@@ -1,0 +1,121 @@
+/*==================Colors=====================*/
+
+	body {
+		background: #E7DED0;
+	}
+
+	.button, .button2, .dropbtn {
+		background-color: #800000;
+		color: #FFF;
+	}
+
+	.course:hover, #newCourse:hover
+	{
+	  	border:1px solid white;
+	}
+
+	.course #hours
+	{
+		background-color: #EDDD9E;
+		color: black;
+	}
+
+	.course #prereqs, .course #coreqs
+	{
+    	background-color: white;
+    	border: solid #998031 3px;
+    	color: #998031;
+    }
+
+    #output
+	{
+		border: 1px solid #332c2c;
+		background-color: lightgrey;
+		color: red;
+	}
+
+	.course #coreqs
+	{
+    	background-color: white;
+    	border: solid #5B447A 3px;
+    	color: #5B447A;
+	}	
+
+	#formbox 
+	{
+		border: solid black 1px;
+		color: white;
+		background: #4F552A;
+	}
+
+	#submit
+	{
+		background: #800000;
+		color: white;
+		border: solid 2px #800000;
+	}
+
+	#newCourses
+	{
+		border: grey solid 2px;
+		background: #FFFFFFFF
+	}
+
+	.hours
+	{
+		background-color: #EDDD9E;
+		color: black;
+	}
+
+	.dropbtn:hover, .dropbtn:focus 
+	{
+		background-color: #800000;
+	}
+
+	.dropdown-content 
+	{
+		background-color: #8F8F8C;
+	}
+
+	.dropdown-content p 
+	{
+	    color: white;
+	}
+
+	.dropdown-content p:hover
+	{
+		background-color: #4F552A;
+	}
+
+	.popuptext {
+		background-color: #8F8F8C;
+	    color: white;
+	}
+
+	.fix
+	{
+		background: black;
+	}
+
+	#key
+	{
+		background-color: white;
+		border: solid 2px grey;
+	}
+
+	.key-graphic
+	{
+		border: 1px solid black;
+	}
+
+	.core:hover
+	{
+		color: black;
+	}
+
+	#remove:hover
+	{
+		color: white;
+	}
+
+/*=============================================*/
