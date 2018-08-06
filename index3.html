@@ -1306,6 +1306,7 @@
 			<div class="addSemester">
 				<button onclick="toggleSelect(); hideDialog()" class="dropbtn">Add Semester</button>
 				<div id="dropdown" class="dropdown-content">
+					<p id="Summer 1" onclick="addSemester(event)">Summer 1</p>
 					<p id="Summer 2" onclick="addSemester(event)">Summer 2</p>
 					<p id="Summer 3" onclick="addSemester(event)">Summer 3</p>
 					<p id="Summer 4" onclick="addSemester(event)">Summer 4</p>
@@ -1632,6 +1633,11 @@
 				newSemester = document.createElement("UL");
 
 				switch(semesterID.getAttribute("id")){
+					case "Summer 1":
+						newSemester.setAttribute("id", "semester25")
+						semesters.insertBefore(newSemester, document.getElementById("semester30"));
+						newSemester.appendChild(close);
+						break;
 					case "Summer 2":
 						newSemester.setAttribute("id", "semester45")
 						semesters.insertBefore(newSemester, document.getElementById("semester50"));
