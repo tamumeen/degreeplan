@@ -631,7 +631,6 @@
 			  <div id="year1" class="year-name">Year 1</div>
 			</ul>
 
-
 			<ul id="semester30" class="semester">
 				
 			  <li id="ENGR217" data-coursedata='[{"prereqs":"MATH152,PHYS206,ENGR216","coreqs":"PHYS207"}]' data-prereqs="" data-hours="2" data-meenRestriction="no" class="course" style="background-color: lightgrey">
@@ -830,23 +829,23 @@
 			  	UCC Elective <br> <br> <br> 
 			  </li>
 
-			  <ul id="semester25" class="semester">
+			  <div id="year2" class="year-name">Year 2</div>
+			</ul>
+
+			<ul id="semester45" class="semester">
 				<li id="MEEN399" data-coursedata='[{"prereqs":"","coreqs":""}]' data-prereqs="" data-hours="0" data-meenRestriction="no" class="course" style="background-color: lightgrey">
 			  	<div class="popup"> 
 			  		<i class="fa fa-info-circle" aria-hidden="true" onclick="showPopup(event)"></i>
 				  	<span class="popuptext" id="MEEN399-info">
 				  		<i id="hide-popup" class="fa fa-times" onclick="hidePopup(event)" aria-hidden="true"></i>
 				  		<br>
-				  		<h2>MEEN 399 High Impact Experience for Mechanical Engineers</h2>
+				  		<h2>EMEEN 399 High Impact Experience for Mechanical Engineers</h2>
 				  		<h3>Credits 0. 0 Other Hours.</h3>
 				  		Participation in an approved high-impact learning practice; reflection on professional outcomes from engineering body of knowledge; documentation and self-assessment of learning experience at mid-curriculum point. </h3>
 				  	</span>
 			  	</div>
 			  	MEEN 399 <br> High Impact <br> Experience
 			  </li>
-			</ul>
-
-			  <div id="year2" class="year-name">Year 2</div>
 			</ul>
 
 			<ul id="semester50" class="semester">
@@ -1639,6 +1638,7 @@
 						semesters.insertBefore(newSemester, document.getElementById("semester30"));
 						newSemester.appendChild(close);
 						break;
+
 					case "Summer 2":
 						newSemester.setAttribute("id", "semester45")
 						semesters.insertBefore(newSemester, document.getElementById("semester50"));
