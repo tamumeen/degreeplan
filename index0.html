@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAMU MEEN Degree Planner</title>
+	<style type="text/css">
+		#list {
+			width: 200px; 
+			font-size: 20px; 
+		}
+		.btn {
+			width: 80px;
+			font-size: 20px;
+			border-radius: 3px; 
+		}
+		h1 {
+			margin-bottom: 55px; 
+		}
+
+		div {
+		    border: 1px solid black;
+		    width: 580px;
+		    height: 200px;
+		    background-color: #800001; 
+		    padding: 20px; 
+		}
+		
+		body {
+			background-color: gray; 
+		}
+
+	</style>
+	<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+<body>
+	<div>
+
+		<h1>How did/will you enter Texas A&M's Mechanical Engineering Department?</h1>
+
+		<select id="list" accesskey="target">
+		   <option selected>Please select a year</option>
+				<option value="index1.html">Apply Texas (before 2014)</option>
+				<option value="index.html">Entry to a Major (ETAM)</option>
+				<option value="index.html">Change of Major from within TAMU</option>
+				<option value="index.html">Transfer from outside TAMU</option>
+		</select>
+		<button class="btn" onclick="goToNewPage()">Submit</button>
+	</div>
+	
+</body>
+</html>
